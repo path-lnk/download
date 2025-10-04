@@ -63,20 +63,9 @@
         .content {
             padding: 40px;
         }
-        .platform-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: #f3f3f3;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 13px;
-            color: #333;
-            margin-bottom: 25px;
-        }
-        .platform-badge::before {
-            content: "🪟";
-            font-size: 16px;
+        .btn-wrapper {
+            text-align: center;
+            margin: 30px 0;
         }
         .step {
             background: #fafafa;
@@ -126,11 +115,10 @@
             padding: 16px 40px;
             text-decoration: none;
             border-radius: 4px;
-            display: block;
+            display: inline-block;
             text-align: center;
             font-weight: 600;
             font-size: 16px;
-            margin: 30px 0;
             cursor: pointer;
             border: none;
             transition: all 0.2s;
@@ -203,8 +191,6 @@
         </div>
         
         <div class="content">
-            <div class="platform-badge">Optimized for Windows</div>
-            
             <div class="step">
                 <span class="step-number">1</span>
                 <div class="step-content">
@@ -213,7 +199,9 @@
                 </div>
             </div>
             
-            <button id="downloadLink" class="download-btn">Download Training Package</button>
+            <div class="btn-wrapper">
+                <button id="downloadLink" class="download-btn">Download Training Package</button>
+            </div>
             
             <div class="step">
                 <span class="step-number">2</span>
